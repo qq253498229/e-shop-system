@@ -11,22 +11,22 @@ export interface RouterStateModel {
 
 export class RouterSelectors {
   @Selector([RouterState])
-  static data({state}: RouterStateOuterModel<RouterStateModel>) {
+  static data({state}: RouterStateOuterModel<RouterStateModel>): any {
     return state?.data;
   }
 
   @Selector([RouterState])
-  static params({state}: RouterStateOuterModel<RouterStateModel>) {
+  static params({state}: RouterStateOuterModel<RouterStateModel>): any {
     return state?.params;
   }
 
   @Selector([RouterState])
-  static queryParams({state}: RouterStateOuterModel<RouterStateModel>) {
+  static queryParams({state}: RouterStateOuterModel<RouterStateModel>): any {
     return state?.queryParams;
   }
 
   @Selector([RouterState])
-  static url({state}: RouterStateOuterModel<RouterStateModel>) {
+  static url({state}: RouterStateOuterModel<RouterStateModel>): any {
     return state?.url;
   }
 }

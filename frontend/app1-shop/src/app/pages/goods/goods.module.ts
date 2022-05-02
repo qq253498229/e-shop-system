@@ -9,7 +9,7 @@ import { CommonService } from '../../shared/services/common.service';
 const routes: Routes = [
   {path: '', redirectTo: 'list'},
   {path: 'list', component: ListComponent},
-  {path: 'details', component: DetailsComponent},
+  {path: 'details/:id', component: DetailsComponent},
 ];
 
 @NgModule({
